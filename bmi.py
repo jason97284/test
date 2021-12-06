@@ -4,7 +4,7 @@ def BMI(w, h):
     return w/(h*h)
 w = st.number_input('請輸入體重(KG)？')
 h = st.number_input('請輸入身高(CM)？')
-st.button('輸入確認')
+confirm_input =st.button('輸入確認')
 if confirm_input:
     bmi = BMI(w, h)
     st.write('BMI為', bmi)
