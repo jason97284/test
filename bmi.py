@@ -3,7 +3,7 @@ import streamlit as st
 def BMI(w, h):
     return w/(h*h)
 w = st.number_input('請輸入體重(KG)？')
-h = st.number_input('請輸入身高(M)？')
+h = st.number_input('請輸入身高(CM)？')
 st.button('輸入確認')
 if confirm_input:
     bmi = BMI(w, h)
